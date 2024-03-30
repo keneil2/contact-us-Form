@@ -1,5 +1,11 @@
 <?php
-  spl_autoload_register(fn($class)=>require_once $class.".php");
+spl_autoload_register(function ($class) {
+  if (file_exists($class . ".php")) {
+      require_once $class . ".php";
+  }else{
+      require_once "vendor/autoload.php";
+  }
+});
 class formErrorHandlerImp extends ContactFormProcessor  implements FormErrorHandlerInterface {
    public function getName(){
    return $this->Name;
@@ -9,6 +15,9 @@ class formErrorHandlerImp extends ContactFormProcessor  implements FormErrorHand
    }
    public function getMsg(){
     return $this->Msg;
+   }
+   public function getMsgdescription(){
+    return $this->Msgdescription;
    }
  // ensure that the inputs are not empty  
   //  public function inputErrorHandler(){

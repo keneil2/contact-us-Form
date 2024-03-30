@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: rgba(0,0,0,0.5) url(pexels-te-lensfix-1374377.jpg);
+    background-blend-mode:darken;
+    background-size: cover;
+    overflow:hidden;
+}
+.container{
+    height:500px;
+    width:700px;
+    background-color: white;
+    border-radius:20px;
+ 
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height:500px; */
+    width:700px;
+}
+input{
+    width:300px;
+    height:40px;
+    /* border:1px solid rgba(0,0,0,0.5); */
+    background-color:lightgray;
+    border-radius:5px;
+    padding:20px;
+    margin:10px 0px;
+    font-weight: 600;
+    border:none;
+}
+input::placeholder{
+    color:rgb(99, 98, 98);
+}
+input:focus{
+    background-color: aliceblue;
+}
+textarea{
+    width:300px;
+    border:none;
+    /* height:40px; */
+    background-color:lightgray;
+    border-radius:5px;
+    /* padding:20px; */
+    margin:10px 0px;
+    font-weight: 600;
+    
+}
+textarea:focus{
+    background-color: aliceblue;
+}
+
+button{
+    padding:10px 20px;
+    background-color: rgb(209, 17, 209);
+    color:white;
+    border: none;
+    border-radius:10px;
+}
+.feedback{
+    color:green;
+    font-weight: 700;
+
+}
+.errors{
+    color:red;
+    font-weight: 700;
+    background-color: antiquewhite;
+    width:300px;
+    padding:5px 0px;
+}
