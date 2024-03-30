@@ -70,9 +70,5 @@ class ContactFormProcessor{
     $mail->Body    = $this->getMsg();
     $mail->AltBody =  $this->getMsg();
     $mail->send();
-    // echo 'Message has been sent';
-// }catch(Exception $e){
-//  echo $e->getMessage();
-// }
     }
 }
