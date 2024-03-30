@@ -7,10 +7,11 @@
 </head>
 <body>
     <div> <h2>CONTACT US</h2>
-        <form action="contactUs.php" method="POST">
-      <input type="text" placeholder="Enter Your Name" name="name">
-      <input type="text" placeholder="Enter Your Name" name="Email">
-      <textarea name="" id="" cols="30" rows="10" name="Message" placeholder=" Enter your message here"></textarea>
+        <form action="index.php" method="POST">
+      <input type="text" placeholder="Enter Your Name" name="Name">
+      <input type="text" placeholder="Enter Your email" name="email">
+     <input type="text" placeholder="please Enter Your Message" name="msg">
+     <textarea name="msg" id="" cols="30" rows="10" placeholder="please Enter Your Message"></textarea>
       <button type="submit">send message</button>
     </form></div>
 </body>
