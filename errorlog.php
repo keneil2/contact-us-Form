@@ -8,7 +8,8 @@ require_once "error.view.php";
 
 function errorhandler($massage,$file,$line){
  $Message=$massage.$file.$line;
- error_log($Message,3,"errorlog.txt");require_once "error.view.php";
+ error_log($Message,3,"errorlog.txt");
+ require_once "error.view.php";
 
 //  echo "unable to Process the page try again later";
 }
